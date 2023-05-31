@@ -1,0 +1,32 @@
+@font-face {
+      font-family: "PPArandir Bold";
+      src: url("fonts/PPAgrandir-Bold.woff");
+}
+
+@font-face {
+      font-family: "PPFuji Bold";
+      src: url("fonts/PPFuji-Bold.woff");
+}
+
+@font-face {
+      font-family: "PPGosha Sans";
+      src: url("fonts/PPGoshaSans-Bold.woff");
+}
+
+@font-face {
+      font-family: "Neue Machina Ultra";
+      src: url("fonts/PPNeueMachina-PlainUltrabold.otf");
+      font-weight: 900;
+}
+
+@font-face {
+      font-family: "hk grotesk";
+      src: url("fonts/hk-grotesk.woff");
+}
+
+h1 {
+      font-family: "PPArandir Bold";
+      font-weight: 800;
+      font-size: 2rem;
+
+}
