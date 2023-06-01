@@ -137,3 +137,14 @@ section.s4 div.square {
 section.s4 div.circle {
       background-color: #5982a0;
 }
+
+div.progress {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 10px;
+      width: 0%;
+      z-index: 1;
+      background-color: #333333;
+}
