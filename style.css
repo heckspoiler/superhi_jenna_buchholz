@@ -40,9 +40,14 @@ body {
 
 header {
       position: fixed;
+      width: 80%;
       top: 36px;
       left: 36px;
+      z-index: 1;
+}
 
+header div {
+      font-size: 1.4rem;
 }
 
 h1 {
@@ -50,6 +55,9 @@ h1 {
       font-weight: 800;
       font-size: 2rem;
 }
+
+
+
 
 
 div {
@@ -64,5 +72,32 @@ section {
       justify-content: center;
       align-items: center;
 
+}
+
+div.content {
+      position: relative;
+}
+
+div.square {
+      height: 100px;
+      width: 100px;
+      background-color: #d54156;
+      position: absolute;
+      top: 50px;
+      left: -50px;
+}
+
+div.content img {
+      position: relative;
+}
+
+div.circle {
+      width: 100px;
+      height: 100px;
+      background-color: #5982a0;
+      position: absolute;
+      border-radius: 50%;
+      bottom: 50px;
+      right: -50px;
 
 }
