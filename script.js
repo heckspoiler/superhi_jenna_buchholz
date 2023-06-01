@@ -26,6 +26,8 @@ document.addEventListener("scroll", () => {
   const pixels = window.pageYOffset;
   sections.forEach((section) => {
     if (section.offsetTop < pixels) {
+      clientTag.innerHTML = "test123";
+      pageTag.innerHTML = "3/%";
     }
   });
 });
