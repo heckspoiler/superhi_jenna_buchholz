@@ -1,6 +1,9 @@
 const pixelsTag = document.querySelector("div.pixels");
 const bodyTag = document.querySelector("body");
 const progressTag = document.querySelector("div.progress");
+const sections = document.querySelectorAll("section");
+const clientTag = document.querySelector("div.client");
+const pageTag = document.querySelector("div.page");
 
 //when we scroll the page, update the pixel tag to be how far we've scrolled
 document.addEventListener("scroll", () => {
@@ -17,4 +20,12 @@ document.addEventListener("scroll", () => {
 
   const percentage = (pixels / totalScrollableDistance) * 100;
   progressTag.style.width = `${percentage}%`;
+});
+
+document.addEventListener("scroll", () => {
+  const pixels = window.pageYOffset;
+  sections.forEach((section) => {
+    if (section.offsetTop < pixels) {
+    }
+  });
 });
