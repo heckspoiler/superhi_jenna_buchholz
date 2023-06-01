@@ -42,18 +42,27 @@ header {
       position: fixed;
       top: 36px;
       left: 36px;
-      z-index: 1;
+
 }
 
 h1 {
       font-family: "PPArandir Bold";
       font-weight: 800;
-      font-size: 1rem;
-
-
+      font-size: 2rem;
 }
+
 
 div {
       font-family: "PPGosha Sans";
+}
+
+section {
+      background-color: #c8dee0;
+      min-height: 100vh;
+      padding: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
 
 }
