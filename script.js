@@ -39,3 +39,20 @@ document.addEventListener("scroll", () => {
     }
   });
 });
+
+// we want to move certain tags based on how far they are from an anchor point
+// what is the anchor point? the middle of the section
+// how far should we parallax? it's a ratio of the distance scrolled to the middle point
+
+document.addEventListener("scroll", () => {
+  const topViewport = window.scrollY;
+  const midViewport = Math.round(topViewport + window.innerHeight / 2);
+  sections.forEach((section) => {
+    const topSection = section.offsetTop;
+    const midSection = topSection + section.offsetHeight / 2;
+    const distanceToSection = midViewport - midSection;
+
+    const tag = section.querySelector("div.square");
+    tag.style.transform = `translate(0, ${distanceToSection * 0.25}px)`;
+  });
+});
