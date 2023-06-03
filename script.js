@@ -51,8 +51,10 @@ document.addEventListener("scroll", () => {
     const topSection = section.offsetTop;
     const midSection = topSection + section.offsetHeight / 2;
     const distanceToSection = midViewport - midSection;
-
-    const tag = section.querySelector("div.square");
-    tag.style.transform = `translate(0, ${distanceToSection * 0.25}px)`;
+    const parallaxTag = section.querySelectorAll(`[data-parallax]`);
+    parallaxTag.forEach((tag) => {
+      const speed = parseFloat(tag.getAttribute("data-parallax"));
+      tag.style.transform = `translate(0, ${distanceToSection * speed}px)`;
+    });
   });
 });
